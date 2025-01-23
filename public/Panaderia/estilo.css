@@ -1,0 +1,19 @@
+.business-table {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.business-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.business-table th, .business-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.business-table th {
+    background-color: #f2f2f2;
+}

@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
+
+h1 {
+  font-family: "Oswald", serif;
+}
+
 body {
 
   font-family: Arial, sans-serif;
@@ -14,7 +22,7 @@ header {
 
   color: #fff;
 
-  padding: 10px 20px;
+  padding: 0px 20px;
 
   display: flex;
 
@@ -90,17 +98,108 @@ header {
 
 .product:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .product h3 {
     text-align: center;
+    color: white;
+    font-size: 30px;
 }
 
 .product img {
     width: 100%;
     max-width: 100px;
     height: auto;
+}
+
+/* PRODUCTOS */
+
+.product.negocio,
+.product.kiosco,
+.product.ropa,
+.product.verduleria,
+.product.carniceria,
+.product.panaderia,
+.product.ferreteria,
+.product.roticeria,
+.product.lavaderos,
+.product.mecanicos,
+.product.gimnasio,
+.product.bicicleterias {
+    font-family: "Oswald", serif;
+    background-size: cover;
+    background-position: center;
+    color: white; /* Asegura que el texto sea blanco */
+    position: relative;
+}
+
+.product.negocio {
+    background-image: url('img/negocio.jpg');
+}
+
+.product.kiosco {
+    background-image: url('img/Kioscos.jpg');
+}
+
+.product.ropa {
+    background-image: url('img/ropa.jpg');
+}
+
+.product.verduleria {
+    background-image: url('img/verduleria.jpg');
+}
+
+.product.carniceria {
+    background-image: url('img/carniceria.jpg');
+}
+
+.product.panaderia {
+    background-image: url('img/panaderia.jpg');
+}
+
+.product.ferreteria {
+    background-image: url('img/ferreteria.jpg');
+}
+
+.product.roticeria {
+    background-image: url('img/Roticeria.jpg');
+}
+
+.product.lavaderos {
+    background-image: url('img/lavadero.jpg');
+}
+
+.product.mecanicos {
+    background-image: url('img/mecanico.jpg');
+}
+
+.product.gimnasio {
+    font-family: "Oswald", serif;
+    background-image: url('img/gimnasio.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Asegura que el texto sea blanco */
+    position: relative;
+}
+
+.product.bicicleterias {
+    background-image: url('img/bicicleteria.jpg');
+}
+
+.product img {
+    display: none; /* Oculta la imagen original */
+}
+
+.product .text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: white;
+    padding: 73px;
+    text-align: center;
 }
 
 @media (max-width: 600px) {
